@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( video-colortoning )
+find_package( OpenCV REQUIRED )
+add_executable( video-colortoning video-colortoning.cpp )
+target_link_libraries( video-colortoning ${OpenCV_LIBS} )
